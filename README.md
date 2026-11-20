@@ -4,11 +4,19 @@ Automated QA tool: code analysis, live browser testing, security, 1000-user load
 
 ## Install on any Windows computer (one line)
 
-Open **PowerShell** and paste:
+**In PowerShell** paste:
 
 ```powershell
 irm https://github.com/shail123-ui/TestNova/releases/latest/download/install-testnova.ps1 | iex
 ```
+
+**In Command Prompt (cmd)** paste:
+
+```bat
+powershell -ExecutionPolicy Bypass -c "irm https://github.com/shail123-ui/TestNova/releases/latest/download/install-testnova.ps1 | iex"
+```
+
+After installing, open a **new** terminal. If PowerShell says "running scripts is disabled", use `testnova.cmd` instead of `testnova`.
 
 This installs Node.js (if missing), TestNova and the test browsers (about 500 MB, one time).
 Or download the 3 files from [Releases](https://github.com/shail123-ui/TestNova/releases/latest) and double-click `install-testnova.bat`.
